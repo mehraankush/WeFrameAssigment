@@ -12,6 +12,9 @@ const nextConfig = {
             sm: '1.5rem',
           }
     },
+    screens:{
+     '1050':{'max':'1050px'}
+    },
     webpack(config){
         config.module.rules.push({
             test:/\.svg$/,
