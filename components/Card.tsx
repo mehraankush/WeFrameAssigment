@@ -29,8 +29,8 @@ const Card = ({title ,Style,NumberOfCompionents =1}:CardProps) => {
             ))}
           </div>
           <div className='flex gap-2 '>
-            <Clock5/>
-            <p className='text-sm font-light'>Due in 4 Days</p>
+            <Clock5 size={20} />
+            <p className='text-sm text-gray-500 font-light'>Due in 4 Days</p>
           </div>
         </div>
 

@@ -21,34 +21,34 @@ const TopNavBar = () => {
          <div className="flex gap-4 mt-3">
             <div>
                 <Bell/>
-                <p className="bg-[#5ECFFF] h-[15px] w-[15px] text-center  absolute ml-2 top-4 rounded-2xl text-xs">12</p>
+                <p className="bg-[#5ECFFF] h-[15px] w-[15px] text-center  absolute ml-3 top-3 rounded-2xl text-xs">12</p>
             </div>
             <div>
-            <p className="bg-[#5ECFFF]  h-[15px] w-[15px] text-center absolute ml-2 top-4 rounded-2xl text-xs">5</p>
+            <p className="bg-[#5ECFFF]  h-[15px] w-[15px] text-center absolute ml-3 top-3 rounded-2xl text-xs">5</p>
                 <Lession/>
             </div>
             <div>
-            <p className="bg-[#5ECFFF] ml-2  h-[15px] w-[15px] text-center absolute top-4 rounded-2xl text-xs">2</p>
+            <p className="bg-[#5ECFFF]  h-[15px] w-[15px] text-center absolute ml-3 top-3 rounded-2xl text-xs">2</p>
               <CheckBox/>
             </div>  
             <div>
-            <p className="bg-[#5ECFFF] ml-2   h-[15px] w-[15px] text-center absolute top-4 rounded-2xl text-xs">!</p>
+            <p className="bg-[#5ECFFF]    h-[15px] w-[15px] text-center absolute ml-3 top-3 rounded-2xl text-xs">!</p>
                 <Office/>
             </div>
          </div>
          
-         <div className="flex bg-[#211A75] rounded-3xl p-3 gap-2">
-                <UK/>
-                <p>ENGLISH</p>
+         <div className="flex bg-[#211A75] rounded-3xl p-3 gap-2 h-fit mt-1">
+                <UK className="h-[20px] w-[20px]"/>
+                <p className="text-sm">ENGLISH</p>
                 <ChevronDown/>
             </div>
            
 
-          <div className="flex gap-3">
-            <Square/>
+          <div className="flex gap-3 h-fit mt-1">
+            <Square className="h-[35px] w-[35px]"/>
             <div className="flex-col">
-               <h3 className="font-bold text-lg text-white">Instructor Day</h3>
-               <p className="text-blue-600">Super Admin</p>
+               <h3 className="font-bold text-sm text-white">Instructor Day</h3>
+               <p className="text-blue-600 text-xs">Super Admin</p>
             </div>
             <ChevronDown/>
           </div>

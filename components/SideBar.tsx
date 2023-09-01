@@ -6,7 +6,7 @@ import { Montserrat } from 'next/font/google'
 import { usePathname } from 'next/navigation'
 
 
-import { Code, Menu ,Mail, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
+import { Code, Menu ,Mail, MessageCircle, UserCircle, CalendarDays, FileVideo, ShoppingCart, Mic2, Settings, LayoutDashboard } from "lucide-react";
 import  BottomCard from './BottomCard'
 
 const montserrat = Montserrat({weight:'600',subsets:['latin']}) 
@@ -14,7 +14,7 @@ const montserrat = Montserrat({weight:'600',subsets:['latin']})
 const routes = [
   {
   lable:"Dashboard",
-  icon:Code,
+  icon:LayoutDashboard,
   href:"/dashboard",
   color:"text-woodland"
   },
@@ -26,8 +26,8 @@ const routes = [
   },
   {
   lable:"Chat",
-  icon:Code,
-  href:"/conversation",
+  icon:MessageCircle,
+  href:"/chat",
   color:"text-faded-blue"
   },
   {
@@ -38,37 +38,37 @@ const routes = [
   },
   {
   lable:"Contact",
-  icon:Code,
-  href:"/video",
+  icon:UserCircle,
+  href:"/contact",
   color:"text-faded-blue"
   },
   {
   lable:"Calendar",
-  icon:Code,
-  href:"/music",
+  icon:CalendarDays,
+  href:"/calendar",
   color:"text-faded-blue"
   },
   {
   lable:"Courses",
-  icon:Code,
-  href:"/code",
+  icon:FileVideo,
+  href:"/courses",
   color:"text-faded-blue"
   },
   {
   lable:"Shop",
-  icon:Code,
+  icon:ShoppingCart,
   href:"/settings",
   color:"text-faded-blue"
   },
   {
   lable:"Invoices",
-  icon:Code,
+  icon:Mic2,
   href:"/settings",
   color:"text-faded-blue"
   },
   {
   lable:"Settings",
-  icon:Code,
+  icon:Settings,
   href:"/settings",
   color:"text-faded-blue"
   }
@@ -110,7 +110,9 @@ const SideBar = () => {
              }
           </div>
        </div>
-       <BottomCard/>
+       <div className="w-full flex justify-around">
+         <BottomCard/>
+       </div>
     </div>
   )
 }

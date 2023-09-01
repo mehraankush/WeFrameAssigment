@@ -11,7 +11,7 @@ interface HeadlineProps{
 
 const HeadLine = ({NumberOfCompionents}:HeadlineProps) => {
   return (
-    <div className='flex ml-5 mr-5 flex-col bg-[#15132B] shadow-xl p-3 mt-5'>
+    <div className='flex ml-5 mr-5 flex-col bg-[#15132B] shadow-xl p-4 rounded mt-5'>
 
         <div className='flex justify-between flex-1 '>
                <div className='flex gap-2'>
@@ -29,7 +29,6 @@ const HeadLine = ({NumberOfCompionents}:HeadlineProps) => {
                        <p className='font-normal text-xs '>Sunnyvale, Ca</p>
                    </div>
                    <div className='h-[50px] w-[50px]  bg-[#fff] rounded-lg'>
-                     {/* <Image src={Logo} alt='Logo'/> */}
                      <Logo/>
                    </div>
                    <MoreVertical className='mt-2'/>
