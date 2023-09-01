@@ -5,18 +5,6 @@ import Image from "next/image";
 import { Montserrat } from 'next/font/google'
 import { usePathname } from 'next/navigation'
 
-import { 
-DashboardSvg,
-EmailSvg,
-ChatSvg,
-KanbanSvg,
-ContactSvg,
-CalendarSvg, 
-CoursesSvg, 
-ShopSvg, 
-SettingsSvg, 
-InvoicesSvg,
-} from "@/components/Svgs";
 
 import { Code, Menu ,Mail, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
 import  BottomCard from './BottomCard'
